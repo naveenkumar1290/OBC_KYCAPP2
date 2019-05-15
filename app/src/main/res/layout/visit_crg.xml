@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#4bb134"
+        >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:src="@drawable/back_icon"/>
+
+        <TextView
+            android:id="@+id/sol_idd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="8dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/back"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="Visit Record" />
+
+        <Button
+            android:id="@+id/logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/logout"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_height="match_parent"
+        android:background="#aef49e"
+        android:layout_below="@+id/rel"
+        android:fillViewport="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+
+            <TextView
+                android:id="@+id/datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/date_time"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_custem"
+                android:textSize="16sp"
+                android:editable="false"
+                android:focusable="false"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:paddingLeft="7dp"
+                android:hint="Date of Visit and Time "
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/datetime_re"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:textColor="#000"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/date_time_re"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_custem"
+                android:textSize="16sp"
+                android:editable="false"
+                android:focusable="false"
+                android:visibility="gone"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:paddingLeft="7dp"
+                android:hint="Date of ReVisit and Time "
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/institude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#000"
+                android:textSize="16sp"/>
+
+
+            <EditText
+                android:id="@+id/ins_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_custem"
+                android:textSize="16sp"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:paddingLeft="7dp"
+                android:hint="Name of Insitution"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"/>
+
+
+            <EditText
+                android:id="@+id/contact_person"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_custem"
+                android:textSize="16sp"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+
+                android:paddingLeft="7dp"
+                android:hint="Contact Person"
+                android:textColor="#000000" />
+
+
+
+            <TextView
+                android:id="@+id/detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"/>
+
+
+            <EditText
+                android:id="@+id/contact_details"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_custem"
+                android:textSize="16sp"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingLeft="7dp"
+                android:hint="Contact Number"
+                android:textColor="#000000" />
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/lead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"/>
+
+
+            <Spinner
+                    android:id="@+id/type_lead"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:background="@drawable/edit_custem"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/led"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                android:textSize="16sp"/>
+
+            <Spinner
+                android:id="@+id/type_lead_child"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textStyle="bold"
+
+                android:textColor="#000000"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:background="@drawable/edit_custem"
+                android:gravity="center"
+                android:textSize="16sp" />
+
+
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"/>
+
+
+            <Spinner
+                android:id="@+id/status_lead"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:background="@drawable/edit_custem"
+                android:gravity="center"
+                android:textSize="16sp" />
+
+
+
+
+            <TextView
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:text="Date of closure"
+                android:textSize="16sp"/>
+
+
+            <EditText
+                android:id="@+id/close_date"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_custem"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:editable="false"
+                android:focusable="false"
+                android:paddingLeft="7dp"
+                android:hint="Date of closure"
+                android:textColor="#000000" />
+
+
+
+
+            <TextView
+                android:id="@+id/converted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:text="Date of conversion"
+                android:textSize="16sp"/>
+
+
+            <EditText
+                android:id="@+id/date_converted"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_custem"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:editable="false"
+                android:focusable="false"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:paddingLeft="7dp"
+                android:hint="Date of conversion"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/sol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Sol ID"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:textSize="16sp"/>
+
+
+            <EditText
+                android:id="@+id/sol_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_custem"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:inputType="number"
+                android:maxLength="4"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:paddingLeft="7dp"
+                android:hint="Enter Sol ID"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/branch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Branch Name"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:textSize="16sp"/>
+
+
+            <EditText
+                android:id="@+id/branch_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_custem"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:editable="false"
+                android:focusable="false"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:paddingLeft="7dp"
+                android:hint="Branch Name"
+                android:textColor="#000000" />
+
+
+
+
+
+            <TextView
+                android:id="@+id/account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:visibility="gone"
+                android:text="No Of Accounts"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"/>
+
+
+            <EditText
+                android:id="@+id/no_account"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_custem"
+                android:textSize="16sp"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:inputType="number"
+                android:maxLength="3"
+                android:paddingLeft="7dp"
+                android:hint="No of Accounts"
+                android:textColor=                "#000000" />
+
+
+            <LinearLayout
+                android:id="@+id/lin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/acco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:text="Account No."
+                android:textSize="16sp"/>
+
+
+            <EditText
+                android:id="@+id/account_close"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_custem"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:inputType="number"
+                android:maxLength="14"
+                android:paddingLeft="7dp"
+                android:hint="Enter Account No."
+                android:textColor="#000000" />
+
+
+
+            <TextView
+                android:id="@+id/revisit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:text="Expected Date of Revisit"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/date_revisit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_custem"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:imeOptions="actionNext"
+                android:editable="false"
+                android:focusable="false"
+                android:singleLine="true"
+                android:paddingLeft="7dp"
+                android:hint="Expected Date Of Revisit"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/remarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:text="Remarks"
+                android:visibility="gone"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/remarks_edt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_custem"
+                android:textSize="16sp"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:paddingLeft="7dp"
+                android:visibility="gone"
+                android:hint="Remarks"
+                android:textColor="#000000" />
+
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="12dp"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/img_capture"-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:text="Select Images"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:background="#4bb134"-->
+                    <!--android:textColor="#FFFFFF"/>-->
+
+                <!--<HorizontalScrollView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:id="@+id/selected_photos_container"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:visibility="visible" >-->
+
+                        <!--&lt;!&ndash; images will be added dynamicall to this layout &ndash;&gt;-->
+                    <!--</LinearLayout>-->
+                <!--</HorizontalScrollView>-->
+            <!--</LinearLayout>-->
+            <TextView
+                android:id="@+id/lat_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/lat"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/edit_custem"
+                android:textSize="16sp"
+                android:editable="false"
+                android:paddingLeft="7dp"
+                android:hint="Latitude"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/lang_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/lang"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/edit_custem"
+                android:textSize="16sp"
+                android:editable="false"
+                android:paddingLeft="7dp"
+                android:hint="Longitude"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/location_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/lacation_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:background="@drawable/edit_custem"
+                android:textSize="16sp"
+                android:editable="false"
+                android:focusable="false"
+                android:imeOptions="actionNext"
+                android:paddingLeft="7dp"
+                android:hint="Name of Location"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/visit_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Unique Visit Number- "
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/uniqe_visit_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text=""
+                    android:textSize="16sp"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"
+                android:textColor="#FFFFFF"
+                android:background="#4bb134"
+                android:text="Submit"/>
+
+            <Button
+                android:id="@+id/update"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:visibility="invisible"
+                android:layout_marginTop="15dp"
+                android:textColor="#FFFFFF"
+                android:background="#4bb134"
+                android:text="Update"/>
+
+
+        </LinearLayout>
+   </ScrollView>
+    </RelativeLayout>

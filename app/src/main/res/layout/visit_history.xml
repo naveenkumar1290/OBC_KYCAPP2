@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9ce76a">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#4bb134"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/back_icon"/>
+
+        <TextView
+            android:id="@+id/sol_idd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/back"
+            android:gravity="center"
+            android:textSize="@dimen/comon_text_size"
+            android:text="@string/record_history" />
+
+
+        <TextView
+            android:id="@+id/show_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:layout_marginRight="6dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textSize="@dimen/comon_text_size"
+            android:text="@string/select_date" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#000"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:background="#4bb134"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="@string/date_visit" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/comon_text_size"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="@string/name_of_the_firm_contacted" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="@string/visit_record_no" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/comon_text_size"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="@string/resend" />
+
+</LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#000"/>
+
+
+    <ListView
+    android:id="@+id/lll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</ListView>
+
+
+
+</LinearLayout>

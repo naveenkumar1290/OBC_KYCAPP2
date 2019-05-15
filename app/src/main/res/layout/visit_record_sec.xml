@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#4bb134"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/back_icon"/>
+
+        <TextView
+            android:id="@+id/sol_idss"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#000"
+            android:layout_marginLeft="4dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/back"
+            android:gravity="center"
+            android:textSize="@dimen/comon_text_size"
+            android:text="" />
+
+        <Button
+            android:id="@+id/logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/logout"
+            android:textSize="@dimen/comon_text_size"
+            android:textAllCaps="false"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/logout"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_below="@+id/rel2"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#aef49e"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/lat_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="@dimen/comon_text_size"/>
+
+
+    <EditText
+        android:id="@+id/lat"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_custem"
+        android:textSize="@dimen/comon_text_size"
+        android:editable="false"
+        android:paddingLeft="7dp"
+        android:hint="@string/latitude"
+        android:textColor="#000000" />
+
+
+    <TextView
+        android:id="@+id/lang_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="@dimen/comon_text_size"/>
+
+
+    <EditText
+        android:id="@+id/lang"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_custem"
+        android:textSize="@dimen/comon_text_size"
+        android:editable="false"
+        android:paddingLeft="7dp"
+        android:hint="@string/longitude"
+        android:textColor="#000000" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/img_capture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/select_images"
+        android:textSize="@dimen/comon_text_size"
+        android:background="#4bb134"
+        android:textColor="@color/white"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/selected_photos_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <!-- images will be added dynamicall to this layout -->
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</LinearLayout>
+
+
+
+    <Spinner
+        android:id="@+id/pro_spn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:background="@drawable/edit_custem"
+        android:gravity="center"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/visit_locati_edt"
+        android:hint=""
+        android:completionThreshold="1"
+        android:minHeight="40dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:background="@drawable/edit_custem"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="@dimen/comon_text_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#4bb134"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/kyc_document_obtained_firm"
+        android:textSize="18sp"/>
+
+
+    <planet_obcapp.com.obc_kyvapp.App_utils.ListHight
+        android:id="@+id/proprietor_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </planet_obcapp.com.obc_kyvapp.App_utils.ListHight>
+
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#4bb134"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/kyc_document_obtained_proprietor"
+        android:textSize="18sp"/>
+
+
+    <ListView
+        android:id="@+id/firm_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+    <TextView
+       android:id="@+id/visit_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:layout_marginBottom="50dp"
+        android:textSize="18sp"
+        android:textColor="#000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/pre"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="@dimen/comon_text_size"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:background="#4bb134"
+            android:text="@string/back"/>
+
+        <Button
+            android:id="@+id/Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="@dimen/comon_text_size"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:background="#4bb134"
+            android:text="@string/submit"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+</ScrollView>
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+       <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/pre"-->
+            <!--android:layout_below="@+id/pass"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--android:background="#4bb134"-->
+            <!--android:text="Back"/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/Submit"-->
+            <!--android:layout_below="@+id/pass"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_toRightOf="@+id/pre"-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--android:background="#4bb134"-->
+            <!--android:text="Submit"/>-->
+
+    <!--</LinearLayout>-->
+
+
+</RelativeLayout>
+
+

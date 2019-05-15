@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9ce76a">
+
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#4bb134"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:id="@+id/sol"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#000"
+            android:layout_marginLeft="15dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="" />
+
+        <Button
+            android:id="@+id/logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/logou"
+            android:textSize="@dimen/comon_text_size"
+            android:textAllCaps="false"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/logout"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel"
+        android:padding="20dp">
+
+
+        <Button
+            android:id="@+id/visit_roc"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="55dp"
+            android:textSize="@dimen/comon_text_size"
+            android:textColor="@color/white"
+            android:background="#4bb134"
+            android:text="@string/new_visit_record"/>
+
+        <Button
+            android:id="@+id/visit_hist"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textSize="@dimen/comon_text_size"
+            android:layout_below="@+id/visit_roc"
+            android:textColor="@color/white"
+            android:layout_marginTop="50dp"
+            android:background="#4bb134"
+            android:text="@string/visit_record_history"/>
+
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/imageButton"
+        android:background="@drawable/ftr"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

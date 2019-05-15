@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#9ce76a"
+    android:alpha="0.9"
+    android:padding="20dp">
+
+
+    <TextView
+        android:id="@+id/otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_otp"
+        android:gravity="center"
+        android:textSize="@dimen/comon_text_size"
+        android:textColor="@color/white" />
+
+
+    <EditText
+        android:id="@+id/otp_id"
+        android:layout_below="@+id/otp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:maxLength="4"
+        android:inputType="number"
+        android:background="@drawable/edit_custem"
+        android:layout_height="45dp" />
+
+    <TextView
+        android:id="@+id/re_otp"
+        android:layout_below="@+id/otp_id"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/resend_otp"
+        android:background="#4bb134"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textSize="@dimen/comon_text_size"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/submit_btn"
+        android:layout_below="@+id/re_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textSize="@dimen/comon_text_size"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/submit_otp"
+        android:layout_below="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/submi"
+        android:background="#4bb134"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textSize="@dimen/comon_text_size"
+        android:textColor="#FFFFFF" />
+
+
+
+</RelativeLayout>

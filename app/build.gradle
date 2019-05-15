@@ -1,0 +1,122 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "planet_obcapp.com.obc_kyvapp"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 36
+        versionName "2.24"
+       // multiDexEnabled = true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+           // shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+    }
+
+    packagingOptions {
+        exclude 'LICENSE.txt'
+
+    }
+}
+
+/*allprojects {
+    buildDir = "C:/tmp/${rootProject.name}/${project.name}"
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+}*/
+/*
+android {
+    aaptOptions {
+        cruncherEnabled = false
+    }
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+}
+*/
+
+/*android {
+    defaultConfig {
+         resConfigs "en"
+    }
+}*/
+
+
+android {
+    lintOptions {
+        //checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+repositories {
+    maven { url 'https://oss.sonatype.org/content/repositories/ksoap2-android-releases/' }
+}
+
+
+/*configurations.all {
+    resolutionStrategy.eachDependency { details ->
+        if (details.requested.group == 'com.android.support'
+                && !details.requested.name.contains('multidex') ) {
+            details.useVersion "28.0.0"
+        }
+    }
+}*/
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testImplementation 'junit:junit:4.12'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.google.code.ksoap2-android:ksoap2-android:3.6.1'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation project (':pp')
+    implementation project (':camera')
+//  implementation ( 'ch.acra:acra:4.5.0'){
+//        exclude group: 'org.json', module: 'json'
+//    }
+   // androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.0'
+    //androidTestImplementation 'com.android.support.test:testing-support-lib:0.1'
+    implementation 'com.wdullaer:materialdatetimepicker:3.2.2'
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
+    implementation 'com.github.f0ris.sweetalert:library:1.5.1'
+    //implementation 'com.google.android.gms:play-services:15.0.1'
+    // location play services
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    // dexter runtime permissions
+    implementation 'com.karumi:dexter:4.2.0'
+    implementation project(':multipleimageselect')
+    implementation 'com.github.bumptech.glide:glide:4.3.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.3.0'
+    implementation 'com.scottyab:rootbeer-lib:0.0.7'
+    implementation 'com.datatheorem.android.trustkit:trustkit:1.0.3'
+   // implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+  //  compile 'com.yakivmospan:scytale:1.0.1'
+    // https://mvnrepository.com/artifact/org.jasypt/jasypt
+    compile group: 'org.jasypt', name: 'jasypt', version: '1.9.2'
+    implementation 'com.google.firebase:firebase-core:16.0.8'
+    // Add dependency
+   // implementation 'com.crashlytics.sdk.android:crashlytics:2.9.9'
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.1@aar') {
+        transitive = true
+    }
+}
+
+apply plugin: 'com.google.gms.google-services'
+

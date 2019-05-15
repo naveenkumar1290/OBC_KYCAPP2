@@ -1,0 +1,53 @@
+apply plugin: 'com.android.library'
+
+android {
+
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // It would be better to fix the issues
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':camera')
+    // implementation 'com.android.support:support-v13:27.1.1'
+    // implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:support-v13:28.0.0'
+}
+
+/***
+ * Adding the dependency is a wise way for this project,
+ * however when we import this library statically into another project
+ * it causes issues when downloading cwac:camera from the AWS server.
+ ***/
+repositories {
+    maven {
+        url "https://repo.commonsware.com.s3.amazonaws.com"
+    }
+}
+
+dependencies {
+    // compile 'com.commonsware.cwac:camera:0.6.10'
+}
+
+// apply from: '../maven_push.gradle'

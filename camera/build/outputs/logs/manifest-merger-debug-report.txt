@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\Aarif_BKP\Arif_Projects\OBC_KYVAPP\camera\AndroidManifest.xml:1:1-10:12
+INJECTED from E:\Aarif_BKP\Arif_Projects\OBC_KYVAPP\camera\AndroidManifest.xml:1:1-10:12
+INJECTED from E:\Aarif_BKP\Arif_Projects\OBC_KYVAPP\camera\AndroidManifest.xml:1:1-10:12
+INJECTED from E:\Aarif_BKP\Arif_Projects\OBC_KYVAPP\camera\AndroidManifest.xml:1:1-10:12
+INJECTED from E:\Aarif_BKP\Arif_Projects\OBC_KYVAPP\camera\AndroidManifest.xml:1:1-10:12
+INJECTED from E:\Aarif_BKP\Arif_Projects\OBC_KYVAPP\camera\AndroidManifest.xml:1:1-10:12
+INJECTED from E:\Aarif_BKP\Arif_Projects\OBC_KYVAPP\camera\AndroidManifest.xml:1:1-10:12
+	package
+		ADDED from E:\Aarif_BKP\Arif_Projects\OBC_KYVAPP\camera\AndroidManifest.xml:2:2-39
+		INJECTED from E:\Aarif_BKP\Arif_Projects\OBC_KYVAPP\camera\AndroidManifest.xml
+		INJECTED from E:\Aarif_BKP\Arif_Projects\OBC_KYVAPP\camera\AndroidManifest.xml
+	android:versionName
+		ADDED from E:\Aarif_BKP\Arif_Projects\OBC_KYVAPP\camera\AndroidManifest.xml:4:2-27
+		INJECTED from E:\Aarif_BKP\Arif_Projects\OBC_KYVAPP\camera\AndroidManifest.xml
+		INJECTED from E:\Aarif_BKP\Arif_Projects\OBC_KYVAPP\camera\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\Aarif_BKP\Arif_Projects\OBC_KYVAPP\camera\AndroidManifest.xml:1:11-69
+	android:versionCode
+		ADDED from E:\Aarif_BKP\Arif_Projects\OBC_KYVAPP\camera\AndroidManifest.xml:3:2-25
+		INJECTED from E:\Aarif_BKP\Arif_Projects\OBC_KYVAPP\camera\AndroidManifest.xml
+		INJECTED from E:\Aarif_BKP\Arif_Projects\OBC_KYVAPP\camera\AndroidManifest.xml
+application
+ADDED from E:\Aarif_BKP\Arif_Projects\OBC_KYVAPP\camera\AndroidManifest.xml:8:2-16

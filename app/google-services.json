@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "201860605848",
+    "firebase_url": "https://obc-kyc.firebaseio.com",
+    "project_id": "obc-kyc",
+    "storage_bucket": "obc-kyc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201860605848:android:97c62a366c86750f",
+        "android_client_info": {
+          "package_name": "planet_obcapp.com.obc_kyvapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "201860605848-0c7f5fne6ahjlj9s0hmf4354q74oteri.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj85dbueYlpOOgshap1RFgE4EbM1spptw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "201860605848-0c7f5fne6ahjlj9s0hmf4354q74oteri.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
