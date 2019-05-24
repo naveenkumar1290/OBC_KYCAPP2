@@ -542,7 +542,7 @@ public class Login_Activity extends AppCompatActivity implements Animation.Anima
         request.addProperty("Password", password);
         util.setusername(this, user_name);
         // util.setPassword(this, password);
-        Log.e("-->LoginOBC input", request.toString());
+      //  Log.e("-->LoginOBC input", request.toString());
         SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
         envelope.dotNet = true;
         envelope.setOutputSoapObject(request);
@@ -553,7 +553,7 @@ public class Login_Activity extends AppCompatActivity implements Animation.Anima
             GetData get;
             db = Databaseutill.getDBAdapterInstance(Login_Activity.this);
             get = new GetData(db, Login_Activity.this);
-            //      get.setUsernameAndPassword(user_name, password);
+            // get.setUsernameAndPassword(user_name, password);
 
 
         } catch (Exception e) {

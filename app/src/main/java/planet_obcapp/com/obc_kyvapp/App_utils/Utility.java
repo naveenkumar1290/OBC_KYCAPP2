@@ -88,16 +88,14 @@ public class Utility {
     public static String KEY_OPENPF="RETIME";
     public static String KEY_DATE="KEY_DATE";
 
-    public static  String base_url="https://121.241.255.225:8080/OBCInsertApp.asmx";
-    public static  String base_url_crg="https://121.241.255.225:8080/crgapp.asmx";
+    public static  String base_url="https://121.241.255.225:8443/OBCInsertApp.asmx";
+    public static  String base_url_crg="https://121.241.255.225:8443/crgapp.asmx";
 //public static  String base_url_crg= "http://obcindia.co.in/obcnew/site/crgapp.asmx";
 
   /*  public static final String HEADER_API = "https://";
     public static final String HEADER_WEBVIEW_URL = "https://";
     public static final String NAMESPACE = "http://tempuri.org/";
-
 */
-
 
     public static String KEY_PLANET="planet";
     public static String KEY_LAUGH="laugh";

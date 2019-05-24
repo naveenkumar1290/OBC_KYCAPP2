@@ -748,17 +748,17 @@ public class VisitRecord_sec_Activity extends AppCompatActivity implements Adapt
         HttpTransportSE androidHttpTransport = new HttpTransportSE(URL,60000);//timeout 30 sec
         androidHttpTransport.debug = true;
 
-        Log.e("InsertOBC input",request.toString());
+      //  Log.e("InsertOBC input",request.toString());
         try {
             androidHttpTransport.call(SOAP_ACTION, envelope);
             KvmSerializable ks = (KvmSerializable) envelope.bodyIn;
-            Log.d("HTTP REQUEST ", androidHttpTransport.requestDump);
-            Log.d("HTTP RESPONSE", androidHttpTransport.responseDump);
+           // Log.d("HTTP REQUEST ", androidHttpTransport.requestDump);
+          //  Log.d("HTTP RESPONSE", androidHttpTransport.responseDump);
             String a = androidHttpTransport.requestDump;
             Object results = (Object) envelope.getResponse();
             String resultstring = results.toString();
-            Log.e("InsertOBC_output",resultstring);
-            Log.e("result", resultstring);
+          //  Log.e("InsertOBC_output",resultstring);
+          //  Log.e("result", resultstring);
             for (int j = 0; j < ks.getPropertyCount(); j++) {
                 ks.getProperty(j);
             }
@@ -780,7 +780,7 @@ public class VisitRecord_sec_Activity extends AppCompatActivity implements Adapt
         } catch (Exception e) {
             catchhandl++;
             e.printStackTrace();
-            Log.e("insertOBC_exception",e.getMessage());
+           // Log.e("insertOBC_exception",e.getMessage());
 
         }
 

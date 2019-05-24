@@ -8,8 +8,8 @@ android {
         applicationId "planet_obcapp.com.obc_kyvapp"
         minSdkVersion 16
         targetSdkVersion 28
-        versionCode 36
-        versionName "2.24"
+        versionCode 37
+        versionName "2.25"
        // multiDexEnabled = true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 

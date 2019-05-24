@@ -11,9 +11,8 @@ import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 
 
-
 public class MyUtils {
-       private final static String HEX = "0123456789ABCDEF";
+    private final static String HEX = "0123456789ABCDEF";
 
 
     public static String encrypt(String cleartext, Context context)
@@ -140,10 +139,10 @@ public class MyUtils {
                 val4 = e(val4);//encry
 
                 SharedPreferences.Editor editor = preferences.edit();
-                editor.putString(Utility.KEY_TESTING,  val1);
-                editor.putString(Utility.KEY_PLANET,  val2);
-                editor.putString(Utility.KEY_REPORT,  val3);
-                editor.putString(Utility.KEY_LAUGH,  val4);
+                editor.putString(Utility.KEY_TESTING, val1);
+                editor.putString(Utility.KEY_PLANET, val2);
+                editor.putString(Utility.KEY_REPORT, val3);
+                editor.putString(Utility.KEY_LAUGH, val4);
                 editor.commit();
                 value = getkey(context);
             } else {
@@ -168,7 +167,7 @@ public class MyUtils {
             val2 = d(val2);//dec
             val3 = d(val3);//dec
             val4 = d(val4);//dec
-            String val=val1+val2+val3+val4;
+            String val = val1 + val2 + val3 + val4;
             value = val.getBytes("UTF-8");
         } catch (Exception e) {
             e.getMessage();
